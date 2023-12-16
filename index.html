@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Sujan Shrestha</div>
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="banner" class="fold banner">
+            <div class="front">
+                <h1>Welcome to My Portfolio</h1>
+                <p id="intro-paragraph">I'm SUJAN SHRESTHA <span id="job-title"></span></p>
+                <button><a href="#">Contact Me</a></button>
+            </div>
+        </section>
+
+        <section id="about" class="fold about">
+            <div class="front">
+                <h2>About Me</h2>
+                <p>
+                    Hello, I'm [Your Name], a dedicated web developer with a passion for creating user-friendly and
+                    visually appealing websites.
+                </p>
+                <p>
+                    My journey in web development started [mention a bit about your background or how you got started].
+                    Since then, I've been on a continuous learning path, staying up-to-date with the latest trends and
+                    technologies to deliver cutting-edge solutions.
+                </p>
+                <p>
+                    As a detail-oriented developer, I specialize in:
+                </p>
+                <ul>
+                    <li>HTML5 and CSS3 for building responsive and visually appealing interfaces.</li>
+                    <li>JavaScript and popular frameworks like React for dynamic and interactive web applications.</li>
+                    <li>Back-end technologies such as Node.js and Express for robust server-side development.</li>
+                    <li>Database management using MongoDB and MySQL.</li>
+                    <!-- Add more skills or technologies as needed -->
+                </ul>
+                <p>
+                    Beyond coding, I am passionate about [mention any other interests or activities related to web
+                    development or technology].
+                    I believe in the power of collaboration and enjoy working in a team to solve challenging problems
+                    and create exceptional digital experiences.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="fold experience">
+            <div class="front">
+                <h2>Experience</h2>
+                <div class="tab-container">
+                    <div class="tab" onclick="openTab(event, 'job1')">Chuchuro Firm</div>
+                    <div class="tab" onclick="openTab(event, 'job2')">SmartSites Nepal</div>
+
+                </div>
+
+                <div id="job1" class="tab-content active-tab-content">
+                    <h4>Junior WordPress Web Develper</h4>
+                    <h5>2016 - 2018</h5>
+                    <p><em>ChuchuroFirm, Sinamangal, Kathmandu </em></p>
+                    <ul>
+                        <li>Lead in the design, development, and implementation of the graphic, layout, and production
+                            communication materials</li>
+                        <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
+                            project. </li>
+                        <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of
+                            the
+                            design</li>
+                        <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                    </ul>
+                    <h4>Mid WordPress Web Develper</h4>
+                    <h5>2019 - 2021</h5>
+                    <p><em>ChuchuroFirm, Sinamangal, Kathmandu </em></p>
+                    <ul>
+                        <li>Lead in the design, development, and implementation of the graphic, layout, and production
+                            communication materials</li>
+                        <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
+                            project. </li>
+                        <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of
+                            the
+                            design</li>
+                        <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                    </ul>
+                </div>
+
+                <div id="job2" class="tab-content">
+                    <h4>Senior WordPress Web Developer</h4>
+                    <h5>2021 - 2022</h5>
+                    <p><em>SmartSites Nepal, Mid-Baneswor, Kathamndu</em></p>
+                    <ul>
+                        <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
+                            advertisements).</li>
+                        <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                        <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                        <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="fold skills">
+            <div class="front">
+                <h2>Skills</h2>
+                <ul class="skills-list fade-in">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Python/Djongo</li>
+                    <li>Responsive Web Design</li>
+                    <li>Version Control (Git)</li>
+                    <li>WordPress Theme development</li>
+                    <li>MySQL Database</li>
+                    <li>Website Security</li>
+                    <li>Problem-Solving</li>
+                    <li>Team collaboration</li>
+                    <li>Leadership</li>
+
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="fold contact">
+            <div class="front">
+                <h3>Contact</h3>
+                <p>Let's connect! Feel free to reach out to me through the following channels:</p>
+                <p>Email: <a href="mailto:suzanshrestha678@gmail.com">suzanshrestha678@gmail.com</a></p>
+                <p>Phone: <a href="tel:+9779865534679">+977 9865534679</a></p>
+
+                <div class="social-links">
+                    <a href="#" class="facebook"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>GitHub</a>
+                    <!-- Add more social media links with corresponding Font Awesome icons -->
+                    <!-- Example:
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i>Facebook</a>
+                    -->
+                </div>
+            </div>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+    </div>
+
+    <footer class="fold footer">
+        <div class="front">
+            <p>&copy; 2023 Sujan Shrestha</p>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabLinks;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active-tab-content");
+            }
+            tabLinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active-tab-content");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
+    <script>
+        // Intersection Observer
+        const aboutSection = document.querySelector('.about');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutSection.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(aboutSection);
+    </script>
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', function () {
+            const skillsSection = document.querySelector('.skills');
+            const skillsList = document.querySelector('.skills-list');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        skillsList.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(skillsSection);
+        });
+    </script>
