@@ -96,6 +96,29 @@ nav a:hover {
   color: #ff9900;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+}
+.navbar-dark .navbar-nav a:hover {
+  color: rgb(56, 182, 255) !important;
+}
+/* Media query for responsive design */
+
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
 #banner {
   position: relative;
   height: 80vh;
@@ -310,7 +333,12 @@ form {
 }
 
 .social-links a:hover {
-  color: #38b6ff; 
+  color: #38b6ff;
+}
+
+
+.bg-dark {
+  background-color: #000;
 }
 
 .tab-container {
@@ -323,11 +351,12 @@ form {
   padding: 15px 20px;
   cursor: pointer;
   border: 1px solid #ccc;
-  background-color: #ddd;
+  background-color: rgb(56, 182, 255);
 }
 
 .tab:hover {
-  background-color: #bbb;
+  background-color: #000;
+  color: white;
 }
 
 .tab-content {
@@ -336,7 +365,7 @@ form {
 }
 
 .active {
-  background-color: #ccc;
+  background-color: rgb(56, 182, 255);
 }
 
 .active-tab-content {
