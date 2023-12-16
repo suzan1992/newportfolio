@@ -46,8 +46,12 @@
         <section id="banner" class="fold banner">
             <div class="front">
                 <h1>Welcome to My Portfolio</h1>
-                <p id="intro-paragraph">I'm SUJAN SHRESTHA <span id="job-title"></span></p>
-                <button type="button" class="btn btn-secondary btn-lg"><a href="#">Contact Me</a></button>  
+                <p id="intro-paragraph">I'm SUJAN SHRESTHA and <span id="job-title"></span></p>
+                <div class="btn-sec">
+                    <button type="button" class="btn btn-primary btn-lg"><a href="#">Contact Me</a></button>
+                    <button type="button" class="btn btn-secondary btn-lg"><a href="#">CV</a></button>
+                </div>
+
         </section>
     </div>
 
@@ -87,8 +91,9 @@
             <div class="front">
                 <h2>Experience</h2>
                 <div class="tab-container">
-                    <div class="tab" onclick="openTab(event, 'job1')">Chuchuro Firm</div>
-                    <div class="tab" onclick="openTab(event, 'job2')">SmartSites Nepal</div>
+
+                    <div class="tab btn btn-primary" data-tab="job1">Chuchuro Firm</div>
+                    <div class="tab btn btn-primary" data-tab="job2">SmartSites Nepal</div>
 
                 </div>
 
@@ -140,24 +145,123 @@
             <div class="front">
                 <h2>Skills</h2>
                 <ul class="skills-list fade-in">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>Python/Djongo</li>
-                    <li>Responsive Web Design</li>
-                    <li>Version Control (Git)</li>
-                    <li>WordPress Theme development</li>
-                    <li>MySQL Database</li>
-                    <li>Website Security</li>
-                    <li>Problem-Solving</li>
-                    <li>Team collaboration</li>
-                    <li>Leadership</li>
-
+                    <li><i class="fab fa-html5"></i>HTML5</li>
+                    <li><i class="fab fa-css3"></i>CSS3</li>
+                    <li><i class="fab fa-js"></i>JavaScript</li>
+                    <li><i class="fab fa-react"></i>React.js</li>
+                    <li><i class="fab fa-node"></i>Node.js</li>
+                    <li><i class="fab fa-python"></i>Python/Djongo</li>
+                    <li><i class="fas fa-mobile-alt"></i>Responsive Web Design</li>
+                    <li><i class="fab fa-git"></i>Version Control (Git)</li>
+                    <li><i class="fab fa-wordpress"></i>WordPress Theme development</li>
+                    <li><i class="fas fa-database"></i>MySQL Database</li>
+                    <li><i class="fas fa-shield-alt"></i>Website Security</li>
+                    <li><i class="fas fa-cogs"></i>Problem-Solving</li>
+                    <li><i class="fas fa-users"></i>Team collaboration</li>
+                    <li><i class="fas fa-users-cog"></i>Leadership</li>
                 </ul>
             </div>
         </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="fold Portfolio">
+            <div class="container">
+                <div class="front">
+                    <h2 class="text-center mb-4">My Portfolio</h2>
+
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="portfoliofeature-983x740.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio Website</h5>
+                                    <p class="card-text">Designed and developed a personal portfolio website to showcase
+                                        skills and projects.</p>
+                                    <a href="#" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="best-ecommerce-platforms.jpg" class="card-img-top" alt="Project 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">E-commerce Platform</h5>
+                                    <p class="card-text">Built a fully functional e-commerce platform with payment
+                                        integration and product management.</p>
+                                    <a href="#" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="maxresdefault.jpg" class="card-img-top" alt="Project 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog System</h5>
+                                    <p class="card-text">Developed a blog system with user authentication, commenting,
+                                        and
+                                        post management features.</p>
+                                    <a href="#" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="fold Services">
+            <div class="container">
+                <div class="front">
+                    <h2 class="text-center mb-4">My Services</h2>
+
+                    <div class="row">
+                        <!-- Service 1 -->
+                        <div class="col-md-4">
+                            <div class="service text-center">
+                                <i class="service-icon fas fa-laptop-code"></i>
+                                <h3 class="service-title">Web Development</h3>
+                                <p class="service-description">
+                                    I specialize in building responsive and user-friendly websites using the latest
+                                    technologies and best practices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="col-md-4">
+                            <div class="service text-center">
+                                <i class="service-icon fas fa-mobile-alt"></i>
+                                <h3 class="service-title">Mobile App Development</h3>
+                                <p class="service-description">
+                                    Create cross-platform mobile applications with a focus on performance, security, and
+                                    a
+                                    seamless user experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="col-md-4">
+                            <div class="service text-center">
+                                <i class="service-icon fas fa-cogs"></i>
+                                <h3 class="service-title">Custom Solutions</h3>
+                                <p class="service-description">
+                                    Tailored solutions to meet your unique business requirements, from e-commerce
+                                    platforms
+                                    to custom web applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="fold contact">
             <div class="front">
                 <h3>Contact</h3>
@@ -188,7 +292,8 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+
             </form>
         </section>
 
@@ -223,7 +328,7 @@
         });
     </script>
 
-    <script>
+    <!-- <script>
         function openTab(evt, tabName) {
             var i, tabContent, tabLinks;
             tabContent = document.getElementsByClassName("tab-content");
@@ -237,7 +342,33 @@
             document.getElementById(tabName).classList.add("active-tab-content");
             evt.currentTarget.classList.add("active");
         }
+    </script> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all elements with class "tab" and convert the NodeList to an array
+            var tabs = Array.from(document.querySelectorAll('.tab'));
+
+            // Add a click event listener to each tab
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    // Get the value of the "data-tab" attribute
+                    var tabId = tab.getAttribute('data-tab');
+
+                    // Hide all tab contents
+                    var tabContents = document.querySelectorAll('.tab-content');
+                    tabContents.forEach(function (content) {
+                        content.classList.remove('active-tab-content');
+                    });
+
+                    // Show the selected tab content
+                    var selectedTabContent = document.getElementById(tabId);
+                    selectedTabContent.classList.add('active-tab-content');
+                });
+            });
+        });
     </script>
+
 
     <script>
         // Intersection Observer
@@ -267,5 +398,17 @@
             }, { threshold: 0.5 });
 
             observer.observe(skillsSection);
+        });
+    </script>
+    <script>
+        // JavaScript to trigger the fade-in effect
+        document.addEventListener('DOMContentLoaded', function () {
+            const skillsList = document.querySelectorAll('.skills-list li');
+
+            skillsList.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('fade-in');
+                }, index * 500); // Adjust the duration (in milliseconds) between each item
+            });
         });
     </script>
