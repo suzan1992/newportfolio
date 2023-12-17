@@ -130,6 +130,10 @@ nav a:hover {
   .content {
     width: 100% !important;
   }
+  .navbar-dark .navbar-brand {
+    width: auto !important;
+    float: none !important;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -250,6 +254,15 @@ button {
   transition: opacity 0.5s, transform 0.5s;
 }
 
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .skills-list.fade-in li {
   opacity: 1;
   transform: translateY(0);
@@ -258,6 +271,7 @@ button {
 .skills-list i {
   margin-right: 10px;
   color: #007bff; /* Blue color, you can customize */
+  animation: rotateIcon 2s linear infinite;
 }
 .fade-in {
   opacity: 0;
@@ -403,6 +417,19 @@ button {
 .social-links i {
   margin-right: 5px;
 }
+.social-links a i {
+  display: inline-block;
+  animation: rotateIcon 2s linear infinite; /* Adjust the duration and other properties as needed */
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 form {
   flex: 1;
@@ -457,9 +484,16 @@ form {
   margin: 0 5px;
   text-decoration: none;
 }
+.social-links a i {
+  color: rgb(0, 123, 255);
+}
+.social-links a i:hover {
+  color: #000;
+}
 
 .social-links a:hover {
-  color: #38b6ff;
+  color: #007bff;
+  text-decoration: none;
 }
 
 .bg-dark {
