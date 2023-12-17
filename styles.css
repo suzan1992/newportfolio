@@ -360,6 +360,10 @@ button {
   font-size: 1.2em;
 }
 
+i.service-icon {
+  animation: rotateIcon 2s linear infinite;
+}
+
 .btn-primary {
   background-color: #007bff;
   color: #fff;
